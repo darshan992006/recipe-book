@@ -10,15 +10,15 @@ let cahnge3=window.getComputedStyle(about1,'::after');
 let a4=document.getElementById('profile1');
 let cahnge4=window.getComputedStyle(profile1,'::after');
 const slider=document.querySelectorAll(".slider"),
-        menuBtn=document.querySelectorAll(".slidebar"),
+        menuBtn=document.querySelector(".slidebar"),
         overlay=document.querySelectorAll(".overlay");
         console.log(slider,menuBtn,overlay);
 
-        // slider.forEach((slider) => { 
-        //     slider.addEventListener("click",()=>{
-        //         menuBtn.classList.toggle("open");
-        //     })
-        // });
+        slider.forEach((slider) => { 
+            slider.addEventListener("click",()=>{
+                menuBtn.classList.toggle("open");
+            })
+        });
         // overlay.addEventListener("click",()=>{
         //     menuBtn.classList.remove("open");
         // });
