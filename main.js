@@ -11,7 +11,7 @@ let a4=document.getElementById('profile1');
 let cahnge4=window.getComputedStyle(profile1,'::after');
 const slider=document.querySelectorAll(".slider"),
         menuBtn=document.querySelector(".slidebar"),
-        overlay=document.querySelectorAll(".overlay");
+        overlay=document.querySelector(".overlay");
         console.log(slider,menuBtn,overlay);
 
         slider.forEach((slider) => { 
@@ -19,9 +19,9 @@ const slider=document.querySelectorAll(".slider"),
                 menuBtn.classList.toggle("open");
             })
         });
-        // overlay.addEventListener("click",()=>{
-        //     menuBtn.classList.remove("open");
-        // });
+        overlay.addEventListener("click",()=>{
+            menuBtn.classList.remove("open");
+        });
 document.addEventListener('scroll',()=>{
     var scroll_position= window.scrollY;
     if(scroll_position>250){
