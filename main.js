@@ -11,7 +11,7 @@ let a4=document.getElementById('profile1');
 let cahnge4=window.getComputedStyle(profile1,'::after');
 const slider=document.querySelectorAll(".slider"),
         menuBtn=document.querySelector(".slidebar"),
-        overlay=document.querySelector(".overlay");
+        overlay=document.querySelector(".overlay"); 
         console.log(slider,menuBtn,overlay);
 
         slider.forEach((slider) => { 
