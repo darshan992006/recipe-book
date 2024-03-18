@@ -50,4 +50,23 @@ body{
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    animation: roll 1s linear forwards;
+}
+
+@keyframes roll{
+    0%{
+        transform: translateX(-100%) rotate(0deg);
+    }
+    25%{
+        transform: translateX(-75%) rotate(90deg);
+    }
+    50%{
+        transform: translateX(-50%) rotate(180deg);
+    }
+    75%{
+        transform: translateX(-25%) rotate(270deg);
+    }
+    100%{
+        transform: translateX(0) rotate(360deg);
+    }
 }
