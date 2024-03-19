@@ -7,12 +7,25 @@
 body{
     text-align: center;
     font-family: "Poppins", sans-serif;
-    width: 100%;
     overflow: hidden;
-    background:url(add2.png) no-repeat;
+}
+.container{
+    position: relative;
+    height: 100vh;
+}
+.container::before{
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background:url(add2.png) no-repeat center;
     background-size: cover;
+    filter:grayscale(15%) contrast(105%) hue-rotate(5deg) ;
 
 }
+
 h4{
     text-align: center;
     text-transform: capitalize;
@@ -20,6 +33,7 @@ h4{
     font-weight: 500;
 }
 .details_container{
+    z-index: 100;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -29,11 +43,13 @@ h4{
     border: none;
     border-radius:10px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    margin-top: 160px;
     background: transparent;
+    margin-top: 50px;
     backdrop-filter: blur(10px);
     /* color: rgba(0, 0, 0, 0.781); */
-    color: rgba(255, 255, 255, 0.863);
+    /* color: rgb(255, 255, 255); */
+    color: #fafafa;
+    text-shadow: 1px 1px 15px black;
 }
 .common{
     display: flex;
@@ -56,6 +72,7 @@ h4{
     color: rgba(255, 255, 255, 0.84);
     font-size: 1rem;
     background: transparent;
+    text-shadow: 1px 1px 10px black;
 }
 .text__decoration{
     font-size: 1rem;
