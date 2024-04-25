@@ -22,12 +22,12 @@
 <script>
     function sendEmail(){
         Email.send({
-    Host : "smtp.gmail.com",
+    Host : "smtp.elasticemail.com",
     Username : "darshanpathak8899@gmail.com",
-    Password : "FA7C154C8EB8147421BE4B1811C1B7D7818E",
-    To : 'darshanpathak8899@gmail.com',
+    Password : "5CB588E2F4502293CCC82A42CF31B3A96255",
+    To:"darshanpathak8899@gmail.com",
     From : document.getElementById("email").value,
-    Subject : "new contact form enquiry ",
+    Subject : "new contact form enquiry",
     Body : "And this is the body"
 }).then(
     message => alert(message)
